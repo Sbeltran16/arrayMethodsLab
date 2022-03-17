@@ -41,9 +41,6 @@ const inventors = [
   
   // 4. Sort the inventors by years lived from shortest to longest lived
 
-    const lived = inventors.sort(function(a,b){
-        
-    })
   
   
   
