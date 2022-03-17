@@ -81,7 +81,12 @@ const inventors = [
   // Array.prototype.reduce()
   // 7. Count the number of instances for each of the data items.
   // Hint:  Return an object where the keys are 'car', 'truck', etc. and the values are the count.
+  const transit = data.reduce(function(key,value){
+    key[value] = key[value] ? key[value] +1: 1;
+    return key
+  }, {});
   
+  console.log(transit)
   
   
   const devs = [
@@ -93,12 +98,14 @@ const inventors = [
   
   // Array.prototype.some()
   // 8. Check if at least one person is 19 or older?
-  
+  let age2 = devs.some(num => num.year <= 2003);
+console.log(age2)
   
   
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
-  
+  let age3 = devs.every(num => num.year <= 2003);
+console.log(age3)
   
   
   const comments = [
